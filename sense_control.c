@@ -69,7 +69,9 @@ void control_init() {
 
 
 void control_laser_intensity(uint8_t intensity) {
-  OCR0A = intensity;
+	if( intensity == 0 )  OCR0A = 0;
+	else OCR0A = 255;
+// OCR0A = intensity;
 }
 
 

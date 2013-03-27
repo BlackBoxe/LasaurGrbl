@@ -238,15 +238,15 @@ void gcode_process_line() {
     #ifndef DEBUG_IGNORE_SENSORS
       //// door and chiller status
       if (SENSE_DOOR_OPEN) {
-        printString("D");  // Warning: Door is open
+        //printString("D");  // Warning: Door is open
       }
       if (SENSE_CHILLER_OFF) {
-        printString("C");  // Warning: Chiller is off
+        //printString("C");  // Warning: Chiller is off
       }
       #ifndef DRIVEBOARD
         // power
         if (SENSE_POWER_OFF) {
-          printString("P"); // Power Off
+          //printString("P"); // Power Off
         } 
       #endif
       // limit
@@ -255,13 +255,13 @@ void gcode_process_line() {
           printString("L1");  // Limit X1 Hit
         }
         if (SENSE_X2_LIMIT) {
-          printString("L2");  // Limit X2 Hit
+          //printString("L2");  // Limit X2 Hit
         }
         if (SENSE_Y1_LIMIT) {
           printString("L3");  // Limit Y1 Hit
         }
         if (SENSE_Y2_LIMIT) {
-          printString("L4");  // Limit Y21 Hit
+          //printString("L4");  // Limit Y21 Hit
         }
       } 
     #endif

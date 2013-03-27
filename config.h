@@ -29,7 +29,7 @@
 // build for new driveboard hardware
 #define DRIVEBOARD
 #define BAUD_RATE 57600
-// #define DEBUG_IGNORE_SENSORS  // set for debugging
+#define DEBUG_IGNORE_SENSORS  // set for debugging
 
 
 #define CONFIG_X_STEPS_PER_MM 32.80839895 //microsteps/mm
